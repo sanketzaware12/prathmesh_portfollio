@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digital Marketing Portfolio</title>
+<meta name="description" content="One-page portfolio for a digital marketer: campaigns, services, testimonials and FAQ.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="bar" id="bar"></div>
+<header class="nav" id="top">
+  <a class="logo" href="#top" aria-label="Home"><span></span>Rohan.</a>
+  <nav id="menu">
+    <a href="#work">Work</a><a href="#services">Services</a><a href="#process">Process</a><a href="#testimonials">Testimonial</a><a href="#faq">FAQ</a>
+    <a class="btn sm mob" href="#contact">Book a Call</a>
+  </nav>
+  <a class="btn sm desk" href="#contact">Book a Call</a>
+  <button class="burger" id="burger" aria-label="Menu"><i></i><i></i></button>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hv">
+    <!-- HERO VIDEO: assets/video/hero.mp4 (+ .webm and a lighter mobile version). It loops seamlessly, muted + autoplay so it never stops. To change it, just replace the files inside assets/video/. -->
+    <video id="hv" autoplay muted loop playsinline preload="auto" poster="assets/video/hero-poster.jpg" disablepictureinpicture disableremoteplayback aria-hidden="true" tabindex="-1">
+      <source src="assets/video/hero-mobile.mp4" type="video/mp4" media="(max-width:700px)">
+      <source src="assets/video/hero.webm" type="video/webm">
+      <source src="assets/video/hero.mp4" type="video/mp4">
+    </video>
+    <i class="aur"></i>
+  </div>
+  <div class="hc">
+    <span class="pill fx" style="--d:.1s"><i></i>Taking new clients for 2026</span>
+    <h1><span class="w" style="--w:0">Making</span> <span class="w" style="--w:1">Every</span> <span class="w" style="--w:2">Click</span> <br><span class="w" style="--w:3">Worth</span> <span class="w" style="--w:4">Winning</span> </h1>
+    <p class="lead fx" style="--d:1s">We turn ad spend and ideas into campaigns that get seen, shared and converted. Take your brand to the next level with data-driven digital marketing.</p>
+    <div class="hbtn fx" style="--d:1.2s"><a class="btn" href="#contact">Book a Call</a><a class="btn ghost" href="#work">View my work</a></div>
+  </div>
+  <div class="stats fx" style="--d:1.4s">
+    <div><b data-n="3.8" data-suf="x">3.8x</b><span>Return on ad spend</span></div>
+    <div><b data-n="46" data-pre="-" data-suf="%">-46%</b><span>Cost per lead</span></div>
+    <div><b data-n="120" data-suf="K+">120K+</b><span>App installs driven</span></div>
+    <div><b data-n="310" data-pre="+" data-suf="%">+310%</b><span>Organic traffic</span></div>
+  </div>
+</section>
+
+<div class="marq" aria-hidden="true"><div><span>Social Media</span><span>Performance Ads</span><span>SEO</span><span>Branding</span><span>Content</span><span>Analytics</span><span>Email Marketing</span><span>Creative Design</span><span>Social Media</span><span>Performance Ads</span><span>SEO</span><span>Branding</span><span>Content</span><span>Analytics</span><span>Email Marketing</span><span>Creative Design</span></div></div>
+
+<section id="work" class="sec">
+  <div class="head">
+    <div><h2>My Recent Campaigns</h2><p>We plan and run campaigns that disrupt the status quo, win customers and grow businesses. Explore how we work.</p></div>
+    <div class="arrows"><button id="prev" aria-label="Previous">&#8592;</button><button id="next" aria-label="Next">&#8594;</button></div>
+  </div>
+  <div class="tabs" id="tabs"><button class="on" data-t="ads">Social Ads</button><button data-t="seo">SEO Growth</button><button data-t="cre">Creative Design</button></div>
+  <div class="track" id="track"></div>
+</section>
+
+<section id="services" class="sec">
+  <div class="head"><div><h2>What I can do for You</h2><p>We plan and build campaigns, content and funnels that disrupt the status quo and win customers. Explore how we work.</p></div><a class="btn" href="#contact">Book a Call Now</a></div>
+  <div class="sgrid" id="svc"></div>
+</section>
+
+<section id="process" class="sec">
+  <div class="head"><div><h2>How We Work</h2><p>A simple four-step process, so you always know what is happening, what comes next and what your money is doing.</p></div></div>
+  <div class="steps" id="steps">
+    <article class="step"><div class="dot">1</div><div class="box"><h3>Discovery Call</h3><p>We talk goals, audience, budget and your current numbers. No jargon, no pressure.</p></div></article>
+    <article class="step"><div class="dot">2</div><div class="box"><h3>Strategy &amp; Plan</h3><p>A clear channel mix, creative direction and tracking setup, with timelines you approve.</p></div></article>
+    <article class="step"><div class="dot">3</div><div class="box"><h3>Launch &amp; Optimize</h3><p>Campaigns go live and get tuned every week: creatives, audiences and budgets.</p></div></article>
+    <article class="step"><div class="dot">4</div><div class="box"><h3>Report &amp; Scale</h3><p>Simple reports you can understand, then we double down on whatever is working.</p></div></article>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="head"><div><h2>Skills</h2><p>Each skill is a brushstroke in the picture of your online presence. We blend strategy, creativity and analytics into your growth journey.</p></div></div>
+  <div class="skills">
+    <ul><li>Storytelling</li><li>Copywriting</li><li>Communication</li><li>Time Management</li><li>Problem Solving</li><li>Branding</li></ul>
+    <ul><li>Content Strategy</li><li>Performance Ads</li><li>Email Automation</li><li>Analytics & Reporting</li><li>Leadership</li><li>Mentoring</li></ul>
+    <ul><li>Graphic Design</li><li>Landing Pages</li><li>Motion Design</li><li>SEO Optimization</li><li>Conversion Tracking</li><li>Social Media Growth</li></ul>
+  </div>
+</section>
+
+<section id="testimonials" class="sec">
+  <div class="head"><div><h2>Client Testimonials</h2></div><div class="arrows"><button id="tprev" aria-label="Previous">&#8592;</button><button id="tnext" aria-label="Next">&#8594;</button></div></div>
+  <div class="track t" id="ttrack">
+    <figure><blockquote>"Great campaign management! Our cost per lead dropped by almost half within two months, and the weekly reports made every rupee of ad spend easy to understand. Only a small note for next time: a few more creative variations early on, but overall excellent work."</blockquote><figcaption><b>A</b>Amit Kulkarni</figcaption></figure>
+    <figure><blockquote>"Excellent work and great communication throughout the process. They paid attention to every detail and made sure everything was done properly."</blockquote><figcaption><b>S</b>Sneha Patil</figcaption></figure>
+    <figure><blockquote>"Fantastic job on our Instagram growth! The content calendar, reels and ad creatives were consistent and on-brand, and our enquiries doubled. Fast turnaround and zero revisions needed."</blockquote><figcaption><b>V</b>Vikram Deshmukh</figcaption></figure>
+    <figure><blockquote>"Our website now ranks on page one for our main keywords. Clear strategy, honest advice and steady results every month."</blockquote><figcaption><b>P</b>Priya Joshi</figcaption></figure>
+  </div>
+</section>
+
+<section id="faq" class="sec">
+  <div class="head"><div><h2>Frequently Asked Questions</h2></div></div>
+  <div class="acc" id="faqs"></div>
+</section>
+
+<section id="contact" class="cta">
+  <h2>Get started with a free Discovery call.</h2>
+  <a class="btn" href="tel:+919876543210">Book a Call</a>
+</section>
+</main>
+
+<footer>
+  <div class="fgrid">
+    <div><a class="logo" href="#top"><span></span>Rohan.</a><p>Growing brands with creative strategy and measurable results.</p></div>
+    <div><h4>Let's connect!</h4><a href="#">LinkedIn</a><a href="#">Instagram</a><span>+91-98765-43210</span></div>
+    <div><h4>Section</h4><a href="#work">Work</a><a href="#services">Services</a><a href="#process">Process</a><a href="#testimonials">Testimonial</a><a href="#top">Pricing</a><a href="#faq">FAQ</a></div>
+  </div>
+  <p class="copy">© 2026. All rights reserved</p>
+</footer>
+<button class="totop" id="totop" aria-label="Back to top">&#8593;</button>
+<script src="assets/script.js"></script>
+</body>
+</html>
