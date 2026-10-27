@@ -43,10 +43,6 @@ if(v){
   ["touchstart","click","scroll","keydown"].forEach(ev=>addEventListener(ev,go,{once:true,passive:true}));
   if(rm){v.pause()}else{go()}
 }
-// count-up stats
-document.querySelectorAll("[data-n]").forEach(el=>{const n=parseFloat(el.dataset.n),d=(el.dataset.n.split(".")[1]||"").length,p=el.dataset.pre||"",s=el.dataset.suf||"";
-if(rm)return;el.textContent=p+(0).toFixed(d)+s;
-setTimeout(()=>{const t0=performance.now(),f=t=>{const k=Math.min((t-t0)/1700,1);el.textContent=p+(n*(1-Math.pow(1-k,4))).toFixed(d)+s;if(k<1)requestAnimationFrame(f)};requestAnimationFrame(f)},1500)});
 // scroll reveal (class removed afterwards so hover transforms stay snappy)
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const t=e.target;t.classList.add("in");io.unobserve(t);setTimeout(()=>t.classList.remove("rv","in"),1000)}}),{threshold:.12});
 document.querySelectorAll(".sec .head,.tabs,.skills ul,.t figure,.acc>div,.scard,.step,.cta,.fgrid>div").forEach((el,i)=>{if(rm)return;el.classList.add("rv");el.style.setProperty("--d",(i%4)*.09+"s");io.observe(el)});
